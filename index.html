@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Página de login</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <div class="main-content-box">
+      
+        <p>Clique no botão para fazer o login.</p>
+
+        <button id="openModalBtn">Abrir Login</button>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="loginForm">
+            <h3>Login</h3>
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="login-btn">Entrar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
 </body>
 </html>
